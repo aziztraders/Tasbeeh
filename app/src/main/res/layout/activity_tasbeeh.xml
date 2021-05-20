@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasbeehActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tasbeeh_background">
+
+        <RelativeLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_100">
+
+            <TextView
+                android:id="@+id/txv_counter"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:background="@color/counter_background_color"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="@string/header_text"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/sp_36"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_subhan_allah"
+                style="@style/button_style"
+                android:background="@drawable/rounded_corner_normal"
+                android:text="@string/subhan_allah" />
+
+            <Button
+                android:id="@+id/btn_alhamdulillah"
+                style="@style/button_style"
+                android:background="@drawable/rounded_corner_normal"
+                android:text="@string/alhamdulillah" />
+
+            <Button
+                android:id="@+id/btn_allahu_akbar"
+                style="@style/button_style"
+                android:background="@drawable/rounded_corner_normal"
+                android:text="@string/allahu_akbar" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                style="@style/button_style"
+                android:background="@drawable/rounded_corner_reset"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rel_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:background="@color/black">
+
+            <ImageButton
+                android:id="@+id/ib_vibrate"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/rounded_corner_normal"
+                android:src="@drawable/ic_baseline_vibration_24"/>
+
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp_5"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5415428971510321/2567877845">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</RelativeLayout>

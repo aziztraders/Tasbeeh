@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tasbeeh</string>
+
+    <string name="header_text">Counter</string>
+    <string name="subhan_allah">Subhan Allah</string>
+    <string name="alhamdulillah">Alhamdulillah</string>
+    <string name="allahu_akbar">Allahu Akbar</string>
+    <string name="reset">Reset</string>
+    <string name="all_rights_are_reserved">All rights are reseved</string>
+    <string name="aziz_traders">Aziz Traders @ 2021</string>
+</resources>
