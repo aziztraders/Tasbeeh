@@ -17,7 +17,7 @@
         <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5415428971510321~6410371197"/>
+            android:value="ca-app-pub-2567861958863389~9174153687"/>
 
 
         <activity
