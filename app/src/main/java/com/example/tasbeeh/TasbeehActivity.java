@@ -62,7 +62,7 @@ public class TasbeehActivity extends AppCompatActivity implements View.OnClickLi
             public void onAdLoaded() {
                 // Code to be executed when an ad finishes loading.
                 super.onAdLoaded();
-                Toast.makeText(TasbeehActivity.this,"Ad loaded",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(TasbeehActivity.this,"Ad loaded",Toast.LENGTH_SHORT).show();
             }
 
             @Override
