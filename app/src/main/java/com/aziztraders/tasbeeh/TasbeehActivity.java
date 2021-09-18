@@ -3,6 +3,7 @@ package com.aziztraders.tasbeeh;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,8 +12,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -44,14 +43,16 @@ public class TasbeehActivity extends AppCompatActivity implements View.OnClickLi
             }
         });
 
-
         //change status bar color
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this, R.color.tasbeeh_statusbar_color));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.setStatusBarColor(ContextCompat.getColor(this, R.color.tasbeeh_statusbar_color));
+        }
         //initialising layout
         initLayout();
+
         //ad
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -84,12 +85,6 @@ public class TasbeehActivity extends AppCompatActivity implements View.OnClickLi
                 // Code to be executed when the user clicks on an ad.
                 super.onAdClicked();
             }
-
-            @Override
-            public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
-            }
-
             @Override
             public void onAdClosed() {
                 // Code to be executed when the user is about to return
