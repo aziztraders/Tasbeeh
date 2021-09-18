@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tasbeeh">
+    package="com.aziztraders.tasbeeh">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -21,7 +21,7 @@
 
 
         <activity
-            android:name=".SplashActivity"
+            android:name="com.aziztraders.tasbeeh.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TasbeehActivity"
+            android:name="com.aziztraders.tasbeeh.TasbeehActivity"
             android:screenOrientation="portrait" />
     </application>
 

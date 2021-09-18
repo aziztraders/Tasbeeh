@@ -1,4 +1,4 @@
-package com.example.tasbeeh;
+package com.aziztraders.tasbeeh;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -11,7 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;

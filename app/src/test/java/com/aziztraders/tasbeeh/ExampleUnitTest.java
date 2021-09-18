@@ -1,4 +1,4 @@
-package com.example.tasbeeh;
+package com.aziztraders.tasbeeh;
 
 import org.junit.Test;
 
